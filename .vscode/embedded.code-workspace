@@ -1,0 +1,20 @@
+{
+  "folders": [
+	{
+		"path": "../.."
+	},
+	{
+		"name": "Dino",
+		"path": ".."
+	}
+],
+  "settings": {
+    "files.associations": {
+      "*.tsx": "typescriptreact",
+      "*.jsx": "javascriptreact",
+      ".dockerignore": "ignore",
+      "oled_i2c.h": "c",
+      "ssd1306.h": "c"
+    }
+  }
+}
