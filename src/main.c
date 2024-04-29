@@ -20,24 +20,9 @@ struct Obstacle {
 
 uint8_t areCollides(struct Obstacle* o1, struct Obstacle* o2) {
   if (
-    o1->x > o2->x + o2->widht
-  ) {
-    return 0;
-  }
-
-  if (
-    o1->x + o1->widht < o2->x
-  ) {
-    return 0;
-  }
-
-  if (
-    o1->y > o2->y + o2->height
-  ) {
-    return 0;
-  }
-
-  if (
+    o1->x > o2->x + o2->widht ||
+    o1->x + o1->widht < o2->x ||
+    o1->y > o2->y + o2->height ||
     o1->y + o1->height < o2->y
   ) {
     return 0;
